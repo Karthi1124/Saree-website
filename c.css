@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background Image */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url('pattu1.jpg'); /* Change to your desired background image */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: rgba(47, 79, 79, 0.8); /* Transparent header */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.hero-section .btn {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.hero-section .btn:hover {
+    background-color: #4b6f6f;
+
+}
+
+/* Saree Varieties Section */
+.varieties-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.varieties-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.saree-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.saree-card {
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.saree-card:hover {
+    transform: scale(1.05);
+}
+
+.saree-card img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px aquamarine;
+}
+
+.saree-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.saree-card p {
+    font-size: 1rem;
+    color:rgb(255, 255, 255);
+}
+
+.saree-card a button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2f4f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.saree-card a button:hover {
+    background-color: #4b6f6f;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color:rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color:white;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color:burlywood;
+}
+
+/* Popup Details */
+.details-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 80%;
+    max-width: 400px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.details-popup h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.details-popup p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.details-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* Footer Section Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-content div {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.footer-content h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 10px 0;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-content ul li a:hover {
+    color: #ff6347;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: yellow;
+}
+
+/* Footer */
+footer {
+    background-color: #410404;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+}

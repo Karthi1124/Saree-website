@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saree Business Startup</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Saree Business</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#varieties">Varieties</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h1>DURAI SHOPPING SITE</h1>
+            <h2>Welcome to Our Saree Collection</h2>
+            <p>Explore our exclusive variety of sarees for every occasion. Embrace your style and comfort.</p><br>
+            <a href="#varieties" class="btn">Explore Our Collections</a>
+        </div>
+    </section>
+
+    <!-- Saree Varieties Section -->
+    <section id="varieties" class="varieties-section">
+        <h2>Saree Varieties</h2>
+        <div class="saree-cards">
+            <div class="saree-card" onclick="showDetails('silk')">
+                <img src="silk.jpeg" alt="Silk Saree">
+                <a href="https://www.myntra.com/silk-saree">
+                    <button type="button" id="silk">SILK SAREE</button>
+                </a>
+                <p>A silk saree is a woven masterpiece of elegance</p>
+            </div>
+            <div class="saree-card" onclick="showDetails('cotton')">
+                <img src="cotton.jpeg" alt="Cotton Saree">
+                <a href="https://www.meesho.com/cotton-sarees/pl/3jh">
+                    <button type="button" id="cotton">COTTON SAREE</button>
+                </a>
+                <p>A cotton saree is a breath of fresh air, simple yet timeless</p>
+            </div>
+            <div class="saree-card" onclick="showDetails('georgette')">
+                <img src="modern.jpeg" alt="Georgette Saree">
+                <a href="https://www.myntra.com/georgette-saree">
+                    <button type="button" id="georgette">GEORGETTE SAREE</button>
+                </a>
+                <p>A georgette saree is a whisper of grace, light and effortlessly flowing</p>
+            </div>
+        </div>
+
+        <div id="saree-details" class="details-popup">
+            <span class="close-btn" onclick="closeDetails()">X</span>
+            <h3 id="saree-name"></h3>
+            <p id="saree-description"></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#contact">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="places">
+                <h3>Places</h3>
+                <ul>
+                    <li>Kanchipuram</li>
+                    <li>Vellore</li>
+                    <li>Chennai</li>
+                    <li>Erode</li>
+                    <li>Salem</li>
+                    <li>Coimbatore</li>
+                </ul>
+            </div>
+            <div class="shopping">
+                <h3>Category</h3>
+                <ul>
+                    <li>Silk</li>
+                    <li>Cotton</li>
+                    <li>Banarasi</li>
+                    <li>Chanderi</li>
+                    <li>Pochampally</li>
+                    <li>Kasavu</li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: duraisareebusiness@gmail.com</li>
+                    <li>Phone: +91 9597603653</li>
+                    <li>Address:12/456 Koil Street,Vellore,TamilNadu</li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 Saree Business. All rights reserved.</p>
+    </footer>
+
+    <script src="m.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saree Business Startup</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Saree Business</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#varieties">Varieties</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h2>Welcome to Our Saree Collection</h2>
+            <p>Explore our exclusive variety of sarees for every occasion.Which it embracee your style and comfort</p><br>
+            <a href="#varieties" class="btn">Explore Our Collections</a>
+        </div>
+    </section>
+
+    <!-- Saree Varieties Section -->
+    <section id="varieties" class="varieties-section">
+        <h2>Saree Varieties</h2>
+        <div class="saree-cards">
+            <div class="saree-card" onclick="showDetails('silk')">
+                <img src="silk.jpeg" alt="Silk Saree">
+                <a href="https://www.google.com/search?q=silk+saree">
+                    <button type="button" id="silk">SILK SAREE</button>
+                </a>
+                <p>A silk saree is a woven masterpiece of elegance</p>
+            </div>
+            <div class="saree-card" onclick="showDetails('cotton')">
+                <img src="cotton.jpeg" alt="Cotton Saree">
+                <a href="https://www.google.com/search?q=cotton+saree">
+                    <button type="button" id="cotton">COTTON SAREE</button>
+                </a>
+                <p>A cotton saree is a breath of fresh air, simple yet timeless</p>
+            </div>
+            <div class="saree-card" onclick="showDetails('georgette')">
+                <img src="modern.jpeg" alt="Georgette Saree">
+                <a href="https://www.google.com/search?q=georgette+saree">
+                    <button type="button" id="georgette">GEORGETTE SAREE</button>
+                </a>
+                <p>A georgette saree is a whisper of grace, light and effortlessly flowing</p>
+            </div>
+        </div>
+
+        <div id="saree-details" class="details-popup">
+            <span class="close-btn" onclick="closeDetails()">X</span>
+            <h3 id="saree-name"></h3>
+            <p id="saree-description"></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Saree Business. All rights reserved.</p>
+    </footer>
+
+    <script src="m.js"></script>
+
+</body>
+
+</html>
